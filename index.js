@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(cors())
 
 // * Available routes
-app.use('/',(req,res)=>{
-    res.json("eNotebook backend Api")
-})
+// app.use('/',(req,res)=>{
+//     res.json("eNotebook backend Api")
+// })
 app.use('/api/auth',auth);
 app.use('/api/notes',notes);
 
