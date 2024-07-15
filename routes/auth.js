@@ -4,8 +4,11 @@ import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken";
 import 'dotenv/config';
 import fetchuser from '../middleware/fetchuser.js';
+
 const router = express.Router();
+
 // *Route 1 :create a user using: post "/api/auth/signup"   .No login required
+
 
 router.post('/signup', async (req, res) => {
     //  data coming from the body(frontended)

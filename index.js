@@ -6,6 +6,12 @@ import cors from'cors';
 connectToMongose();
 const app=express();
 const port =4000;
+
+// handle the cors eror while deploying
+app.use(cors({
+    origin: 'https://inotebook-frontened.vercel.app/'
+  }));
+
 // route this way is not good way to make routes we make new folder routes
 
 // *middleware
