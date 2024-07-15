@@ -15,7 +15,7 @@ app.use(cors({
 }));
 
 app.use(cors({
-    origin: 'https://inotebook-frontened.vercel.app'
+    origin: 'https://inotebook-frontened.vercel.app/'
 }));
 
 // Middleware
