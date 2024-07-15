@@ -11,6 +11,10 @@ const port = 4000;
 
 // Handle CORS error while deploying
 app.use(cors({
+    origin: '*'
+}));
+
+app.use(cors({
     origin: 'https://inotebook-frontened.vercel.app'
 }));
 
